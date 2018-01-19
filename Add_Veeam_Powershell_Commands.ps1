@@ -1,0 +1,1 @@
+add-pssnappin veeampssnapin
