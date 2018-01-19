@@ -1,2 +1,2 @@
 Install-Module -Name VMware.PowerCLI
-Get-Module –ListAvailable VM* | Import-Module
+Get-Module -ListAvailable VM* | Import-Module 
