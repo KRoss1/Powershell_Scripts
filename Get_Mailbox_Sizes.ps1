@@ -1,0 +1,1 @@
+﻿get-mailbox | get-MailboxStatistics | ft DisplayName, TotalItemSize
