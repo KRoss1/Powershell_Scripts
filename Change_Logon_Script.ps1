@@ -1,6 +1,6 @@
 ﻿param(
-[String]$Username,
-[String]$LogonScript
+        [String]$Username,
+        [String]$LogonScript
 )
 
 
