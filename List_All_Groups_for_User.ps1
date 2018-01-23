@@ -20,8 +20,8 @@ List_All_Groups_for_User.ps1 -Username mike.wallace
 #>
 param(
     [Parameter(Mandatory=$true)]
-        [string]$username
+        [string]$Username
 )
 
 Write-Verbose "Getting List of Groups"
-GET-ADUser -Identity $username –Properties MemberOf | Select-Object -ExpandProperty MemberOf | Get-ADGroup -Properties Name | Select-Object Name
+GET-ADUser -Identity $Username –Properties MemberOf | Select-Object -ExpandProperty MemberOf | Get-ADGroup -Properties Name | Select-Object Name
