@@ -1,6 +1,8 @@
-﻿$username = Read-Host 'Enter Username'
-$newPassword = Read-Host "Enter the New Password" -AsSecureString
+﻿param(
+[String]$Username,
+[SecureString]$Password
+)
 
-Set-ADAccountPassword $username -NewPassword $newPassword
-Set-ADUser $username -ChangePasswordAtLogon $true
+Set-ADAccountPassword $Username -NewPassword $Password
+Set-ADUser $Username -ChangePasswordAtLogon $true
 
