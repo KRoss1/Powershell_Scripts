@@ -34,7 +34,7 @@ param(
     [Parameter(Mandatory=$true)]
         [String]$Mailbox,
     [Parameter(Mandatory=$true)]
-        [SecureString]$User,
+        [string]$User,
     [Parameter(Mandatory=$true)]
         [String]$Server,
     [Parameter(Mandatory=$true)]
