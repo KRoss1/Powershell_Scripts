@@ -23,6 +23,7 @@ param (
         [String]$Username
 )
 
+Write-Verbose "Getting List of groups the user is a member of"
 $memberOfGroups = Get-ADPrincipalGroupMembership -Identity $who | select  -ExpandProperty distinguishedName
 
 Get-ADUser $who    
