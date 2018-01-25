@@ -10,10 +10,10 @@ Uses Disable-ADAccount and and Get-ADPrincipalGroupMembership to Disable Account
 Specifies the User you want to disable
 
 .EXAMPLE
-Disable_AD_Account_and_Remove_Memberships.ps1 -Mailbox "Accounts" -Username "Mike"
+Disable_AD_Account_and_Remove_Memberships.ps1 -Username "Mike"
 
 .EXAMPLE
-Disable_AD_Account_and_Remove_Memberships.ps1 -Mailbox Engineering -Username mike.jones
+Disable_AD_Account_and_Remove_Memberships.ps1 -Username mike.jones
 
 
 #>
