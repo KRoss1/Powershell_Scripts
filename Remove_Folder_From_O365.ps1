@@ -1,6 +1,6 @@
 param (
     [Parameter(Mandatory=$true)]
-    [String]$Username
+    [String]$Username,
     [Parameter(Mandatory=$true)]
     [String]$Folder
 )
