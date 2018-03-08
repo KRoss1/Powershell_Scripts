@@ -10,8 +10,11 @@ Checks the OU for all groups and returns them into a Variable. Then for each gro
 Then writes out to an Array the Group that is currently being checked and each member of that group. When all the members are done, it moves to the next group in the Group Array.
 Once all groups are finished it will export a CSV file to the Current Users Desktop.
 
+.PARAMETER OU
+Specifies the OU you want to search
+
 .EXAMPLE
-.\List_All_Groups_Plus_Members.ps1
+.\List_All_Groups_Plus_Members.ps1 -OU "OU=Office,DC=Company,DC=Local"
 
 
 #>
