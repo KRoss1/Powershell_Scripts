@@ -5,6 +5,6 @@ $credential = Get-Credential
 
 Connect-VIServer -Server $server -Credential $credential
 
-Get-VM | where {$_.PowerState -eq "PoweredOn"} | select name, PowerState, NumCpu, MemoryGB
+Get-VM | Where-Object {$_.PowerState -eq "PoweredOn"} | Select-Object name, PowerState, NumCpu, MemoryGB
 
 Disconnect-VIServer -Server $server 

@@ -28,4 +28,4 @@ Write-Verbose "Adding Exchange Commands"
 Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
 
 Write-Verbose "Searching for Email Address: $EmailAddress"
-Get-Recipient | Select Name -Expand EmailAddresses | Where {$_.SMTPAddress -match "$EmailAddress"} | Format-Table Name, SMTPAddress
+Get-Recipient | Select-Object Name -Expand EmailAddresses | Where-Object {$_.SMTPAddress -match "$EmailAddress"} | Format-Table Name, SMTPAddress
