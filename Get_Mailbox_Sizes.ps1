@@ -1,1 +1,1 @@
-﻿get-mailbox | get-MailboxStatistics | ft DisplayName, TotalItemSize
+﻿get-mailbox | get-MailboxStatistics | Format-Table DisplayName, TotalItemSize
