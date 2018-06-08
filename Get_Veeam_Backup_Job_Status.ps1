@@ -38,4 +38,4 @@ $Job = Get-VBRJob -Name $VBJob
 
 $Results = New-Object PSObject -property @{JobName = $Job.Name; Status = $Job.State;}
 
-$Results | Select JobName, Status
+$Results | Select-Object JobName, Status
